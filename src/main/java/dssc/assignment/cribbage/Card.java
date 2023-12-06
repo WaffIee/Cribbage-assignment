@@ -11,9 +11,7 @@ public class Card {
     }
 
     public int getValue() {
-        // Implement your logic to get the value of the card
         // In Cribbage, Ace counts as 1, and face cards (Jack, Queen, King) count as 10
-        // Number cards have their face value
         if ("A".equals(rank)) {
             return 1;
         } else if ("J".equals(rank) || "Q".equals(rank) || "K".equals(rank)) {
@@ -24,7 +22,6 @@ public class Card {
     }
 
     public int getRankValue() {
-        // Implement your logic to get the numeric value of the rank
         // In Cribbage, Ace is low, so it has the lowest rank value
         if ("A".equals(rank)) {
             return 1;
