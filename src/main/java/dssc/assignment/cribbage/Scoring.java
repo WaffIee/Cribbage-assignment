@@ -4,7 +4,27 @@ import java.util.*;
 
 public class Scoring {
 
-    
+
+
+    public static void main(String[] args) {
+        // Example hands
+        String hand1 = "5H5D5SJC5C";
+        String hand2 = "0DJHQSAC9D";
+
+        // Calculate scores
+        int score1 = calculateScore(hand1);
+        int score2 = calculateScore(hand2);
+
+        // Display results
+        System.out.println("Score for hand1: " + score1);
+        System.out.println("Score for hand2: " + score2);
+
+//       output
+//        > Task :Scoring.main()
+//        Score for hand1: 20
+//        Score for hand2: 0
+    }
+
 
     public static int calculateScore(String hand) {
         int score = 0;
