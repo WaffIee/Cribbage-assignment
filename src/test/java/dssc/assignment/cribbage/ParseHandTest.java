@@ -12,8 +12,8 @@ public class ParseHandTest {
     void parseOneCard() {
         Card card = CardParser.parseCard("5H");
         assertAll(
-                () -> assertEquals("5", card.rank()),
-                () -> assertEquals(Suite.HEART, card.suite())
+                () -> assertEquals("5", card.getRank()),
+                () -> assertEquals(Suite.HEART, card.getSuite())
         );
     }
 }

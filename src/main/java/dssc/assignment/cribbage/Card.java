@@ -10,6 +10,10 @@ public class Card {
         this.suite = suite;
     }
 
+    public String getRank() {
+        return rank;
+    }
+
     public int getValue() {
         // In Cribbage, Ace counts as 1, and face cards (Jack, Queen, King) count as 10
         if ("A".equals(rank)) {
